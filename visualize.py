@@ -16,16 +16,16 @@ def animate(i):
     cur.close()
     conn.close()
 
-    idx = 321
-    title = ['X value', 'Y value', 'Z value', 'ax value', 'ay value', 'az value']
+    idx = 311
+    title = ['AX value', 'AY value', 'AZ value', 'ax value', 'ay value', 'az value']
     #fig = plt.figure()
     #fig.tight_layout()
     for i in range(values):
-        ax = fig.add_subplot(idx+i);
-        ax.title.set_text(title[i])
+        ax = fig.add_subplot(idx+i)
         ax.clear()
+        ax.title.set_text(title[i])
         ax.plot(new_data[:,i])
-ani = animation.FuncAnimation(fig, animate, interval=1000)
+ani = animation.FuncAnimation(fig, animate, interval=10)
 plt.subplots_adjust(left=0.1, bottom=0.1, right=0.9, top=0.9, wspace=0.2, hspace=0.5)
 plt.show()
 
