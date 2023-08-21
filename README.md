@@ -1,7 +1,7 @@
 # Eathquake-Early-Warning-System
 A collaborative research project of Duke University &amp; IOE Pulchowk Campus on EEWS
 
-#### Not completed yet, xD
+#### To be completed, xD
 
 ## First Phase
 - Data collection from MMA8451 
